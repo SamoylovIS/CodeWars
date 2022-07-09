@@ -1,0 +1,2 @@
+def deadAntCount (ants):
+    return max(ants.count('a'), ants.count('n'), ants.count('t')) - ants.count('ant')

@@ -1,0 +1,10 @@
+def redistribute_wealth(wealth):
+    average = sum(wealth)/len(wealth)
+    for n, i in enumerate(wealth, 0):
+        if n != average:
+            i = average
+            wealth[n] = i
+
+# Best way
+#def redistribute_wealth(wealth):
+#    wealth[:] = [sum(wealth) / len(wealth)] * len(wealth)

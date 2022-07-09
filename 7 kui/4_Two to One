@@ -1,0 +1,11 @@
+def longest(a, b):
+    g = []
+    k =  sorted(a+b)
+    for i in k:
+        if i not in g:
+            g.append(i)
+    return(("".join(g)))
+
+# Best way
+#def longest(a1, a2):
+#    return "".join(sorted(set(a1 + a2)))

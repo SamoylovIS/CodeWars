@@ -1,0 +1,18 @@
+import string
+def rot13(message):
+    a=[]
+    for i in message:
+        if i in string.ascii_uppercase:
+            k = ord(i)-65
+            k_new = ((k+13)%26)+65
+            a.append(chr(k_new))
+        else:
+            if i in string.ascii_lowercase:
+                p = ord(i)-97
+                p_new = ((p+13)%26)+97
+                a.append(chr(p_new))
+            else:   
+                a.append(i)
+    a=[''.join(a)]
+    return(a[0])
+

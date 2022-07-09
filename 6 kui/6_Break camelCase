@@ -1,0 +1,14 @@
+import string
+def solution(s):
+    a=[]
+    for i in s:
+        if i in string.ascii_lowercase:
+            a.append(i)
+        if i in string.ascii_uppercase:
+            a.append(f' {i}')
+    a=[''.join(a)]
+    return(a[0])
+
+# Best solution
+#def solution(s):
+#    return ''.join(' ' + c if c.isupper() else c for c in s)

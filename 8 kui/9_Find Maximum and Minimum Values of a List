@@ -1,0 +1,7 @@
+def minimum(arr):
+    k=sorted(arr)
+    return (k[0])
+
+def maximum(arr):
+    f=sorted(arr)
+    return (f[-1])

@@ -1,0 +1,13 @@
+def human_years_cat_years_dog_years(human_years):
+    a = []
+    if human_years == 1:
+        a = [1,15,15]
+        return a
+    if human_years == 2:
+        a = [2,24,24]
+        return a
+    else:
+        a.append(human_years)
+        a.append(24+(human_years-2)*4)
+        a.append(24+(human_years-2)*5)
+    return a

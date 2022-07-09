@@ -1,0 +1,16 @@
+def count(string):
+    if len(string) == 0:
+        return {}
+    else:
+        a = {}
+        for i in string:
+            if i in a:
+                a[i] += 1
+            else:
+                a[i] = 1
+        return(a)
+
+# Best solution
+#from collections import Counter
+#def count(string):
+#    return Counter(string)
