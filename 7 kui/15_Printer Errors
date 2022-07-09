@@ -1,0 +1,11 @@
+def printer_error(s):
+    str = "abcdefghijklm"
+    count = 0
+    for i in s:
+        if i not in str:
+            count += 1
+    return(f"{count}/{len(s)}")
+
+# Best way
+# def printer_error(s):
+#    return "{}/{}".format(len([x for x in s if x not in "abcdefghijklm"]), len(s))
