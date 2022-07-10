@@ -1,0 +1,4 @@
+def find_outlier(integers):
+    chet = [k for k in integers if k % 2 != 0]
+    nechet = [l for l in integers if l % 2 == 0]
+    return chet[0] if len(chet) < len(nechet) else nechet[0]
