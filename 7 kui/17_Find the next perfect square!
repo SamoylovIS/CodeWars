@@ -1,0 +1,9 @@
+def find_next_square(sq):
+    if (int(sq**0.5))**2==sq:
+        return int(((sq**0.5)+1)**2)
+    return -1
+
+#Best way
+#def find_next_square(sq):
+#    x = sq**0.5    
+#    return -1 if x % 1 else (x+1)**2

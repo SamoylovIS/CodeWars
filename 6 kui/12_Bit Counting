@@ -1,0 +1,15 @@
+def count_bits(n):
+    k = ""
+ 
+    while n > 0:
+        y = str(n % 2)
+        k = y + k
+        n = int(n / 2)
+ 
+    count = 0
+    for i in str(k):
+        count+=int(i)
+    return count
+#Best way
+#def countBits(n):
+#    return bin(n)[2:].count("1")

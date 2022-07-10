@@ -1,0 +1,13 @@
+def spin_words(sentence):
+    a  = sentence.split()
+    b = []
+    for i in a:
+        if len(i)>=5:
+            b.append(i[::-1])
+        else:
+            b.append(i)
+    return " ".join(b)
+
+#Best way
+#def spin_words(sentence):
+#    return " ".join([x[::-1] if len(x) >= 5 else x for x in sentence.split(" ")])
