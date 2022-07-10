@@ -1,0 +1,14 @@
+import collections as col
+
+
+def duplicate_count(text):
+    f = col.Counter(text.lower())
+    count = 0
+    for i in f.values():
+        if i > 1:
+            count += 1
+    return count
+
+#Best way
+#def duplicate_count(s):
+#  return len([c for c in set(s.lower()) if s.lower().count(c)>1])

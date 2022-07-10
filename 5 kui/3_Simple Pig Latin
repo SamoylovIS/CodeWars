@@ -1,0 +1,13 @@
+def pig_it(text):
+    a = []
+    for i in text.split():
+        if str(i) < 'A':
+            a.append(i)
+            continue
+        a.append(i[1:]+i[0]+"ay")
+    return " ".join(a)
+
+#Best way
+#def pig_it(text):
+#    lst = text.split()
+#    return ' '.join( [word[1:] + word[:1] + 'ay' if word.isalpha() else word for word in lst])
