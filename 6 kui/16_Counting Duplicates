@@ -9,6 +9,6 @@ def duplicate_count(text):
             count += 1
     return count
 
-#Best way
-#def duplicate_count(s):
+# Best way
+# def duplicate_count(s):
 #  return len([c for c in set(s.lower()) if s.lower().count(c)>1])
